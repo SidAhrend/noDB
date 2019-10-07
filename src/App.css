@@ -1,0 +1,226 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+header{
+  background-color: whitesmoke;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.blah-button{
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 50px;
+  border: 0;
+  width: 70px;
+  background-color: whitesmoke;
+}
+#logo{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 30px;
+  border: 0px;
+  background-color: whitesmoke;
+}
+#logo:hover {
+  background-color: rgb(236, 236, 236);
+}
+.blah-button:hover{
+  background-color: rgb(236, 236, 236);
+}
+
+.main-card{
+  background-image: url('https://images.unsplash.com/photo-1457689146074-bd667e343a9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+}
+#profile-card{
+  height: 475px;
+  width: 300px;
+  background-color: transparent;
+  margin: 50px;
+}
+#artist-photo{
+  height: 225px;
+  background-color: transparent;
+}
+#artist-photo:hover{
+  animation-name: shake;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+#artist_name{
+  height: 68px;
+  background-color: transparent;
+  font-family: 'Gloria Hallelujah', cursive;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 35px;
+  color: whitesmoke;
+  text-shadow: 5px 5px rgb(0, 0, 0);
+}
+#artist-info{
+  background-image: linear-gradient( rgba(100, 100, 100, 0.794) , rgba(255, 255, 255, 0));
+  height: 215px;
+  font-family: 'Gloria Hallelujah', cursive;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 10px;
+  font-size: 15px;
+  color: whitesmoke;
+  text-shadow: 2px 2px black;
+}
+.album-card{
+  width: 800px;
+  height: 150px;
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.705) , rgba(255, 255, 0, 0)); 
+  display: flex;
+  margin-top: 50px;
+  color: whitesmoke;
+  text-shadow: 2px 2px black;
+}
+.album-info{
+  font-size: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin-left: 10px;
+  color: whitesmoke;
+
+}
+#album-photo1{
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  
+}
+#album-photo1:hover{
+  animation-name: shake;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#album-photo2{
+  width: 150px;
+  height: 150px;
+  background-color: black;
+}
+#album-photo2:hover{
+  animation-name: shake;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+#album-photo3{
+  width: 150px;
+  height: 150px;
+  background-color: black;
+}
+#album-photo3:hover{
+  animation-name: shake;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+.bio-box{
+  width: 100%;
+  height: 17vh;
+  background-color: whitesmoke; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+}
+.bio{
+  width: 80%;
+  height: 15vh;
+  background-color: transparent;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 19px;
+  justify-items: center;
+  justify-content: center;
+}
+#textbox{
+  width: 80%;
+  height: 17vh;
+  background-color: whitesmoke;
+  margin-left: 50px; 
+  font-family: 'Gloria Hallelujah', cursive;
+}
+input {
+  height: 30px;
+  width: 400px;
+  justify-content: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 24px;
+  margin-top: 15px;
+}
+.comment-button{
+  height: 30px;
+  width: 406px;
+  border: black 1px;
+
+}
+#list{
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+.List{
+  height: 200px;
+  width: 400px;
+
+}
+ul {
+  width: 300px;
+  background-color: transparent;
+  font-family: 'Gloria Hallelujah', cursive;
+  background-image: linear-gradient( whitesmoke, rgba(255, 255, 255, 0));
+  margin-left: 15px;
+  
+}
+
+
+img{
+  width: 100%;
+  
+}
